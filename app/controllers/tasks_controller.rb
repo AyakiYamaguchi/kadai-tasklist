@@ -20,7 +20,7 @@ class TasksController < ApplicationController
       redirect_to @task
     else
       flash[:danger] = 'Task が投稿されませんでした'
-      redner 'tasks/new'
+      render 'tasks/new'
     end
   end
   
